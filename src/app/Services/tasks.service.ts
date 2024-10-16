@@ -19,8 +19,8 @@ export class TasksService  {
   getTaskByID(id:number):Observable<Task>{
     return this._HttpClient.get<Task>(`data/${id}`);
   }
-  onTogglecompletaion(id:number):Observable<any>{
-    return this._HttpClient.put(`data/${id}`,{});
+  onTogglecompletaion(id:number, data:Task):Observable<any>{
+    return this._HttpClient.put(`data/${id}`,data);
   }
 
 }

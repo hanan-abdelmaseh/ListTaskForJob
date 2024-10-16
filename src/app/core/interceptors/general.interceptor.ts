@@ -13,7 +13,9 @@ export class GeneralInterceptor implements HttpInterceptor {
   constructor() {}
 
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
+
     const BaseUrl = " http://localhost:3000";
+    //const BaseUrl  ="https://my-json-server.typicode.com/hanan-abdelmaseh/ListTaskForJobDBJson"
     request = request.clone({
       url: `${BaseUrl}/${request.url}`
     });

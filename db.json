@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 1,
-      "taskName": "Food Page",
+      "taskName": "Home Page",
       "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis labore aut iure deleniti, ex autem",
       "isCompleted": true,
       "creationDate": "2024-09-16T11:16:15.987Z",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "taskName": "Food Page",
+      "taskName": "About Page",
       "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis labore aut iure deleniti, ex autem",
       "isCompleted": true,
       "creationDate": "2024-09-16T11:16:15.987Z",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "taskName": "Food2 Page",
+      "taskName": "contact Page",
       "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis labore aut iure deleniti, ex autem",
       "isCompleted": true,
       "creationDate": "2024-09-16T11:16:15.987Z",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "taskName": "Food1 Page",
+      "taskName": "Food Page",
       "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis labore aut iure deleniti, ex autem",
       "isCompleted": false,
       "creationDate": "2024-09-16T11:16:15.987Z",
@@ -44,13 +44,13 @@
       "id": 6,
       "taskName": "app Page",
       "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis labore aut iure deleniti, ex autem",
-      "isCompleted":false,
+      "isCompleted": false,
       "creationDate": "2024-09-16T11:16:15.987Z",
       "modificationDate": "2024-09-16T11:37:26.013Z"
     },
     {
       "id": 7,
-      "taskName": "Food Page",
+      "taskName": "News Page",
       "description": " Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis labore aut iure deleniti, ex autem",
       "isCompleted": true,
       "creationDate": "2024-09-16T11:16:15.987Z",

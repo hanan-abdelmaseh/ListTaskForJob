@@ -17,7 +17,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
 import { ChangeStatusComponent } from './Components/change-status/change-status.component';
 import { GeneralInterceptor } from './core/interceptors/general.interceptor';
-
+import { NgxSpinnerModule } from "ngx-spinner";
+import { LoadingInterceptor } from './core/interceptors/loading.interceptor';
 
 @NgModule({
   declarations: [
@@ -37,14 +38,18 @@ import { GeneralInterceptor } from './core/interceptors/general.interceptor';
     MatButtonModule,
     MatDialogModule,
     MatCardModule,
-    MatChipsModule
-    
+    MatChipsModule,
+    NgxSpinnerModule
     
   ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
       useClass: GeneralInterceptor,
+      multi: true,
+    }, {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LoadingInterceptor,
       multi: true,
     }
   ],

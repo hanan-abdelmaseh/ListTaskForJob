@@ -36,8 +36,13 @@ export class TaskListComponent  implements OnInit{
     dialogRef.afterClosed().subscribe(result => {
       if(result){
     console.log(result);
-      
-    this.toggleStatus(result.id);
+      if(result.isCompleted){
+        result.isCompleted = false
+      }
+      else{
+        result.isCompleted = true
+      }
+    this.toggleStatus(result.id , result);
       }
       
    })
@@ -46,8 +51,8 @@ export class TaskListComponent  implements OnInit{
 
  
 
-  toggleStatus(id: number){
-    this._TasksService.onTogglecompletaion(id).subscribe({
+  toggleStatus(id: number, data:Task){
+    this._TasksService.onTogglecompletaion(id , data).subscribe({
       next: (res: any) => {  
         console.log(res) 
       }, error: () => {
