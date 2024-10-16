@@ -9,11 +9,11 @@
 
             <!-- If  completed   -->
 
-            <p *ngIf="data.isCompleted">Are you sure you want to mark as Not completed<span> {{data.taskName}}</span>?</p>
+            <p *ngIf="data.isCompleted">Are you sure you want to mark <span> {{data.taskName}}</span> as Not completed?</p>
 
             <!-- If not completed   -->
 
-            <p *ngIf="!data.isCompleted">Are you sure you want to mark as Completed <span> {{data.taskName}}</span> ?</p>
+            <p *ngIf="!data.isCompleted">Are you sure you want to mark  <span> {{data.taskName}}</span> as Completed  ?</p>
 
         </mat-dialog-content>
 
@@ -27,7 +27,7 @@
                        
             <!-- to complete  -->
             <button type="button" *ngIf="!data.isCompleted"
-             class="btn btn-outline-danger" 
+             class="btn btn-outline-success" 
             [mat-dialog-close]="data">Completed </button>
         </mat-dialog-actions>
     </ng-container>
