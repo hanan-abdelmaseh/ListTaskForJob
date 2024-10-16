@@ -1,0 +1,29 @@
+.section-header {
+    width: 100%;
+    padding-block: 1.1rem;
+    padding-inline: 3rem;
+    background-color: hsl(0, 0%, 100%);
+  
+    h2 {
+      font-size: 28px;
+      font-weight: 400;
+      color: hsl(0, 0%, 31%);
+    }
+}
+th{
+    background-color: #315951e6 !important;
+    color: #fff;
+    border: 1px solid rgba(25, 61, 57, .9) !important;
+}
+.completed{
+    background-color: #009247;
+   
+}
+.status {
+    color: #fff;
+    border-radius: 18px;
+    padding: 10px 15px;
+}
+.notCompleted{
+   background-color:  #922e25b3;
+}

@@ -1,0 +1,37 @@
+<section class="block-dialog p-2">
+
+
+
+    <ng-container  class="">
+  
+        <!-- <h2 mat-dialog-title >Block this user</h2> -->
+        <mat-dialog-content class="mat-typography" >
+
+            <!-- If  completed   -->
+
+            <p *ngIf="data.isCompleted">Are you sure you want to mark as Not completed<span> {{data.taskName}}</span>?</p>
+
+            <!-- If not completed   -->
+
+            <p *ngIf="!data.isCompleted">Are you sure you want to mark as Completed <span> {{data.taskName}}</span> ?</p>
+
+        </mat-dialog-content>
+
+        <mat-dialog-actions class="d-flex justify-content-between mx-2">
+            <button mat-button mat-dialog-close (click)="onNoClick()">Cancel</button>
+
+            <!-- to un complete this user  -->
+            <button type="button" *ngIf="data.isCompleted" class="btn btn-outline-danger" 
+           
+                   [mat-dialog-close]="data"> Not completed</button>
+                       
+            <!-- to complete  -->
+            <button type="button" *ngIf="!data.isCompleted"
+             class="btn btn-outline-danger" 
+            [mat-dialog-close]="data">Completed </button>
+        </mat-dialog-actions>
+    </ng-container>
+    
+    
+
+</section>

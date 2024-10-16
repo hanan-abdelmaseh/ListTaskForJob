@@ -1,0 +1,31 @@
+<section>
+    <div class="container mt-5 p-5">
+        <div class="col-md-6 m-auto">
+            <mat-card class="example-card" appearance="outlined" *ngIf="taskItem">
+                <mat-card-header >
+                  <mat-card-title class="mb-2">{{taskItem.taskName}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                  <p class="description">{{taskItem.description}}</p>
+                  <p>Creation Date : {{taskItem.creationDate|date}}</p>
+                  <p>Modification Date :{{taskItem.modificationDate| date}}</p>
+                  <p>Status : 
+                    <span>
+                        <span *ngIf="taskItem.isCompleted"> Completed</span>
+                        <span *ngIf="!taskItem.isCompleted">Not Completed</span>
+                    </span>
+                  </p>
+                </mat-card-content>
+                
+              </mat-card>
+
+              <div class="back d-flex align-items-end justify-content-end mt-5">
+                <button class="btn backBtn" (click)="goBack()">
+                    
+                     Back</button>
+              </div>
+        </div>
+    </div>
+</section>
+
+
